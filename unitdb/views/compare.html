@@ -91,24 +91,24 @@
   <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level1\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level1']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level1'] }} hp/s</div></td>
   <!-- Level 2 -->
   <td title="'Level 2:&nbsp;'" />
-  <td title="'Kills'" sortable="'Veteran[\'Level1\'] || -2000000000'">{{ item.Veteran['Level1'] }}</td>
-  <td title="'Health'" sortable="'(Veteran[\'Level1\'] && Defense.Health * (1 + 1 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level1']">{{ item.Defense.Health * (1 + 1 * 0.1) | round }} hp</div></td>
-  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level1\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level1']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level1'] }} hp/s</div></td>
+  <td title="'Kills'" sortable="'Veteran[\'Level2\'] || -2000000000'">{{ item.Veteran['Level2'] }}</td>
+  <td title="'Health'" sortable="'(Veteran[\'Level2\'] && Defense.Health * (1 + 2 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level2']">{{ item.Defense.Health * (1 + 2 * 0.1) | round }} hp</div></td>
+  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level2\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level2']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level2'] }} hp/s</div></td>
   <!-- Level 3 -->
   <td title="'Level 3:&nbsp;'" />
-  <td title="'Kills'" sortable="'Veteran[\'Level1\'] || -2000000000'">{{ item.Veteran['Level1'] }}</td>
-  <td title="'Health'" sortable="'(Veteran[\'Level1\'] && Defense.Health * (1 + 1 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level1']">{{ item.Defense.Health * (1 + 1 * 0.1) | round }} hp</div></td>
-  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level1\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level1']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level1'] }} hp/s</div></td>
+  <td title="'Kills'" sortable="'Veteran[\'Level3\'] || -2000000000'">{{ item.Veteran['Level3'] }}</td>
+  <td title="'Health'" sortable="'(Veteran[\'Level3\'] && Defense.Health * (1 + 3 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level3']">{{ item.Defense.Health * (1 + 3 * 0.1) | round }} hp</div></td>
+  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level3\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level3']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level3'] }} hp/s</div></td>
   <!-- Level 4 -->
   <td title="'Level 4:&nbsp;'" />
-  <td title="'Kills'" sortable="'Veteran[\'Level1\'] || -2000000000'">{{ item.Veteran['Level1'] }}</td>
-  <td title="'Health'" sortable="'(Veteran[\'Level1\'] && Defense.Health * (1 + 1 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level1']">{{ item.Defense.Health * (1 + 1 * 0.1) | round }} hp</div></td>
-  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level1\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level1']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level1'] }} hp/s</div></td>
+  <td title="'Kills'" sortable="'Veteran[\'Level4\'] || -2000000000'">{{ item.Veteran['Level4'] }}</td>
+  <td title="'Health'" sortable="'(Veteran[\'Level4\'] && Defense.Health * (1 + 4 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level4']">{{ item.Defense.Health * (1 + 4 * 0.1) | round }} hp</div></td>
+  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level4\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level4']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level4'] }} hp/s</div></td>
   <!-- Level 5 -->
   <td title="'Level 5:&nbsp;'" />
-  <td title="'Kills'" sortable="'Veteran[\'Level1\'] || -2000000000'">{{ item.Veteran['Level1'] }}</td>
-  <td title="'Health'" sortable="'(Veteran[\'Level1\'] && Defense.Health * (1 + 1 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level1']">{{ item.Defense.Health * (1 + 1 * 0.1) | round }} hp</div></td>
-  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level1\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level1']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level1'] }} hp/s</div></td>
+  <td title="'Kills'" sortable="'Veteran[\'Level5\'] || -2000000000'">{{ item.Veteran['Level5'] }}</td>
+  <td title="'Health'" sortable="'(Veteran[\'Level5\'] && Defense.Health * (1 + 5 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level5']">{{ item.Defense.Health * (1 + 5 * 0.1) | round }} hp</div></td>
+  <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level5\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level5']">{{ item.Defense.RegenRate + item.Buffs.Regen['Level5'] }} hp/s</div></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttWeapons"><table id="ctWeapons" ng-table-dynamic="weaponTableParams with weaponFeatureColumns" show-group="false" class="compareTable stickyheaders">
  <tr ng-repeat-start="group in $groups">
