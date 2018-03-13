@@ -17,7 +17,7 @@
  </tr>
 </table></script><script type="text/ng-template" id="cttEconomy"><table id="ctEconomy" ng-table-dynamic="tableParams with economyColumns" class="compareTable stickyheaders">
  <tr ng-click="showUnitDetails(item)" ng-if="item.showAdvancedEconomy" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
-  <td ng-repeat="col in $columns">
+  <td ng-repeat="col in $columns" title="{{col.title()+' : '+item.fullName}}">
     <div ng-if="col.firstColumn" class="sideScrollMeAlways">
       <div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div>
     </div>
@@ -32,7 +32,7 @@
  </tr>
 </table></script><script type="text/ng-template" id="cttAbilities"><table id="ctAbilities" ng-table-dynamic="tableParams with abilityColumns" class="compareTable stickyheaders noWrapHeaders">
  <tr ng-click="showUnitDetails(item)" ng-if="item.Display.Abilities" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
-  <td ng-repeat="col in $columns">
+  <td ng-repeat="col in $columns" title="{{col.title()+' : '+item.fullName}}">
     <div ng-if="col.firstColumn" class="sideScrollMeAlways">
       <div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div>
     </div>
@@ -127,7 +127,7 @@
   </td>
  </tr>
  <tr ng-click="showUnitDetails(o.unit)" ng-show="!weaponGroupsShow[group.value]" class="{{ o.unit.faction|lowercase }}" ng-repeat="o in group.data" ng-repeat-end>
-  <td ng-if="col.field !== 'WeaponCategory'" ng-repeat="col in $columns" class="wfc{{ col.field }}">
+  <td ng-if="col.field !== 'WeaponCategory'" ng-repeat="col in $columns" class="wfc{{ col.field }}" title="{{col.title()+' : '+o.weapon.DisplayName+' : '+o.unit.fullName}}">
     <div ng-if="col.firstColumn" class="sideScrollMeAlways">
       <div class="strategic icon-{{ o.unit.faction  }}_{{ o.unit.strategicIcon}}" ></div>
     </div>
@@ -156,7 +156,7 @@
 </table>
 </div></script><script type="text/ng-template" id="cttEnhancements"><table id="ctEnhancements" ng-table-dynamic="enhancementTableParams with enhancementFeatureColumns" class="compareTable stickyheaders">
  <tr ng-click="showUnitDetails(o.unit)" class="{{ o.unit.faction|lowercase }}" ng-repeat="o in $data">
-  <td ng-repeat="col in $columns" title="{{col.title()}}">
+  <td ng-repeat="col in $columns" title="{{col.title()+' : '+o.unit.Enhancements[o.enhancement]['Name']+' : '+o.unit.fullName}}">
     <div ng-if="col.firstColumn" class="sideScrollMeAlways">
       <div class="strategic icon-{{ o.unit.faction  }}_{{ o.unit.strategicIcon}}" ></div>
     </div>
