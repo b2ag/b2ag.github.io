@@ -1,5 +1,5 @@
-<div id="loadingHint" ng-if="loading" style="opacity:0.5;background:#222;width:100%;height:100%;position:fixed;z-index:1000;display:table"><div style="display:table-cell;text-align:center;vertical-align:middle;font-size:1000%">Loading...</div></div><div style="position:fixed; top:0px; bottom:0px; top: auto; z-index:100; background:black;padding:2px"><a href="#/">home</a></div><div ng-if="activeUnitDetailUnit" class="unitDetails"><div class="unitDetailsBackground"><unit content="activeUnitDetailUnit"></div></div><div class="unitNameDisplayHoverArea leftSide"></div><div class="unitNameDisplayHoverAreaNeighbor"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('General')" style="cursor: pointer;">General</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['General']" src="'cttGeneral'"></ng-include><div ng-if="needTableShield"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Shield')" style="cursor: pointer;">Shield</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Shield']" src="'cttShield'"></ng-include></div><div ng-if="needTableEconomy"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Economy')" style="cursor: pointer;">Economy</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Economy']" src="'cttEconomy'"></ng-include></div><div ng-if="needTableAbilities"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Abilities')" style="cursor: pointer;">Abilities</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Abilities']" src="'cttAbilities'"></ng-include></div><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Intel')" style="cursor: pointer;">Intel</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Intel']" src="'cttIntel'"></ng-include><div ng-if="needTablePhysics"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Physics')" style="cursor: pointer;">Physics</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Physics']" src="'cttPhysics'"></ng-include></div><div ng-if="needTableAirPhysics"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Air Physics')" style="cursor: pointer;">Air Physics</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Air Physics']" src="'cttAirPhysics'"></ng-include></div><div ng-if="needTableWreckage"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Wreckage')" style="cursor: pointer;">Wreckage</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Wreckage']" src="'cttWreckage'"></ng-include></div><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Veterancy')" style="cursor: pointer;">Veterancy</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Veterancy']" src="'cttVeterancy'"></ng-include><div ng-if="needTableWeapons"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="testBlubbFunction('Weapons')" style="cursor: pointer;">Weapons</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Weapons']" src="'cttWeapons'"></ng-include></div><div ng-if="needTableEnhancements"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Enhancements')" style="cursor: pointer;">Upgrades</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Enhancements']" src="'cttEnhancements'"></ng-include></div><script type="text/ng-template" id="cttGeneral"><table id="ctGeneral" ng-table="tableParams" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+<div id="loadingHint" ng-if="loading" style="opacity:0.5;background:#222;width:100%;height:100%;position:fixed;z-index:1000;display:table"><div style="display:table-cell;text-align:center;vertical-align:middle;font-size:1000%">Loading...</div></div><div style="position:fixed; top:0px; bottom:0px; top: auto; z-index:100; background:black;padding:2px"><a href="#/">home</a></div><div ng-if="activeUnitDetailUnit" class="unitDetails"><div class="unitDetailsBackground"><unit class="active" content="activeUnitDetailUnit"></div></div><div class="unitNameDisplayHoverArea leftSide"></div><div class="unitNameDisplayHoverAreaNeighbor"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('General')" style="cursor: pointer;">General</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['General']" src="'cttGeneral'"></ng-include><div ng-if="needTableShield"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Shield')" style="cursor: pointer;">Shield</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Shield']" src="'cttShield'"></ng-include></div><div ng-if="needTableEconomy"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Economy')" style="cursor: pointer;">Economy</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Economy']" src="'cttEconomy'"></ng-include></div><div ng-if="needTableAbilities"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Abilities')" style="cursor: pointer;">Abilities</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Abilities']" src="'cttAbilities'"></ng-include></div><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Intel')" style="cursor: pointer;">Intel</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Intel']" src="'cttIntel'"></ng-include><div ng-if="needTablePhysics"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Physics')" style="cursor: pointer;">Physics</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Physics']" src="'cttPhysics'"></ng-include></div><div ng-if="needTableAirPhysics"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Air Physics')" style="cursor: pointer;">Air Physics</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Air Physics']" src="'cttAirPhysics'"></ng-include></div><div ng-if="needTableWreckage"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Wreckage')" style="cursor: pointer;">Wreckage</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Wreckage']" src="'cttWreckage'"></ng-include></div><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Veterancy')" style="cursor: pointer;">Veterancy</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Veterancy']" src="'cttVeterancy'"></ng-include><div ng-if="needTableWeapons"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="testBlubbFunction('Weapons')" style="cursor: pointer;">Weapons</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Weapons']" src="'cttWeapons'"></ng-include></div><div ng-if="needTableEnhancements"><h1 class="sideScrollMeAlways unitNameDisplayHoverArea"><span ng-click="toggleShowSection('Enhancements')" style="cursor: pointer;">Upgrades</span></h1><ng-include class="unitNameDisplayHoverAreaNeighbor" ng-if="!showSection['Enhancements']" src="'cttEnhancements'"></ng-include></div><script type="text/ng-template" id="cttGeneral"><table id="ctGeneral" ng-table="tableParams" class="compareTable stickyheaders">
+ <tr ng-click="showUnitDetails(item)" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td title="''" sortable="'tmpSelectionOrder'"><div class="sideScrollMeAlways"><div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div></div></td>
   <td title="'Faction'" sortable="'faction'" class="sideScrollMe noWrap">{{ item.faction }}</td>
   <td title="'Unit'" sortable="'fullName'" class="sideScrollMe noWrap">{{ item.fullName }}</td>
@@ -9,10 +9,10 @@
   <td title="'Build Time'" sortable="'Economy.BuildTime'"><div class="ic icon-time"></div>{{ item.Economy.BuildTime | shorten }}</td>
   <td title="'Health'" sortable="'Defense.Health'"><div class="ic icon-health"></div>{{ item.Defense.Health | shorten }}</td>
   <td title="'Regen'" sortable="'Defense.RegenRate || -2000000000'"><div ng-if="item.Defense.RegenRate"><div class="ic icon-health"></div>{{ item.Defense.RegenRate }} hp/s</div></td>
-  <td title="'Id'" sortable="'id'"><a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a></td>
+  <td title="'Id'" sortable="'id'"><small>{{ item.id }}</small></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttShield"><table id="ctShield" ng-table-dynamic="tableParams with shieldTableColumns" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.Defense.Shield" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Defense.Shield" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td ng-repeat="col in $columns" title="{{col.title()+'\n'+item.fullName}}">
     <div ng-if="col.field === 'tmpSelectionOrder'" class="sideScrollMeAlways">
       <div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div>
@@ -29,13 +29,13 @@
     <div ng-if="['faction','fullName','ShieldMaxHealth','ShieldRechargeTime'].indexOf(col.field) === -1 && item.Shield.indexOf(col.field) !== -1">
       {{item.Defense.Shield[col.field]}}
     </div>
-    <div ng-if="col.field === 'id'" class="sideScrollMeAlways">
+    <div ng-if="col.field === 'id'">
       <a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a>
     </div>
   </td>
  </tr>
 </table></script><script type="text/ng-template" id="cttEconomy"><table id="ctEconomy" ng-table-dynamic="tableParams with economyTableColumns" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.showInTableEconomy" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.showInTableEconomy" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td ng-repeat="col in $columns" title="{{col.title()+'\n'+item.fullName}}">
     <div ng-if="col.field === 'tmpSelectionOrder'" class="sideScrollMeAlways">
       <div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div>
@@ -46,19 +46,14 @@
     <div ng-if="item.Economy.indexOf(col.field) !== -1">
       {{item.Economy[col.field]}}
     </div>
-    <div ng-if="col.field === 'id'" class="sideScrollMeAlways">
-      <a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a>
-    </div>
+    <div ng-if="col.field === 'id'"><small>{{ item.id }}</small></div>
   </td>
  </tr>
 </table></script><script type="text/ng-template" id="cttAbilities"><table id="ctAbilities" ng-table-dynamic="tableParams with abilityTableColumns" class="compareTable stickyheaders noWrapHeaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.Display.Abilities" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Display.Abilities" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td ng-repeat="col in $columns" title="{{col.title()+'\n'+item.fullName}}">
     <div ng-if="col.field === 'tmpSelectionOrder'" class="sideScrollMeAlways">
       <div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div>
-    </div>
-    <div ng-if="col.field === 'id'" class="sideScrollMeAlways">
-      <a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a>
     </div>
     <div ng-if="col.field === 'faction'" class="sideScrollMe noWrap">
       {{ item.faction }}
@@ -67,10 +62,11 @@
       {{ item.fullName }}
     </div>
     <div ng-if="col.normalColumn && item.Display.Abilities.indexOf(col.field) != -1" class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" style="display:inline-block"></div>
+    <div ng-if="col.field === 'id'"><small>{{ item.id }}</small></div>
   </td>
  </tr>
 </table></script><script type="text/ng-template" id="cttIntel"><table id="ctIntel" ng-table="tableParams" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.Intel" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Intel" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td title="''" sortable="'tmpSelectionOrder'"><div class="sideScrollMeAlways"><div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div></div></td>
   <td title="'Faction'" sortable="'faction'" class="sideScrollMe noWrap">{{ item.faction }}</td>
   <td title="'Unit'" sortable="'fullName'" class="sideScrollMe noWrap">{{ item.fullName }}</td>
@@ -78,10 +74,10 @@
   <td title="'Vision Radius'" sortable="'Intel.VisionRadius || -2000000000'">{{ item.Intel.VisionRadius }}</td>
   <td title="'Radar Radius'" sortable="'Intel.RadarRadius || -2000000000'">{{ item.Intel.RadarRadius }}</td>
   <td title="'Sonar Radius'" sortable="'Intel.SonarRadius || -2000000000'">{{ item.Intel.SonarRadius }}</td>
-  <td title="'Id'" sortable="'id'"><a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a></td>
+  <td title="'Id'" sortable="'id'"><small>{{ item.id }}</small></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttPhysics"><table id="ctPhysics" ng-table="tableParams" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.Physics" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Physics" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td title="''" sortable="'tmpSelectionOrder'"><div class="sideScrollMeAlways"><div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div></div></td>
   <td title="'Faction'" sortable="'faction'" class="sideScrollMe noWrap">{{ item.faction }}</td>
   <td title="'Unit'" sortable="'fullName'" class="sideScrollMe noWrap">{{ item.fullName }}</td>
@@ -90,10 +86,10 @@
   <td title="'Turn rate'" sortable="'Physics.TurnRate || -2000000000'">{{ item.Physics.TurnRate }}</td>
   <td title="'Fuel use time'" sortable="'Physics.FuelUseTime || -2000000000'"><div ng-if="item.Physics.FuelUseTime">{{ item.Physics.FuelUseTime | time }}</div></td>
   <td title="'Fuel recharge time'" sortable="'(Physics.FuelUseTime/Physics.FuelRechargeRate) || -2000000000'"><div ng-if="item.Physics.FuelUseTime && item.Physics.FuelRechargeRate">{{ 10*item.Physics.FuelUseTime / item.Physics.FuelRechargeRate | time }}</div></td>
-  <td title="'Id'" sortable="'id'"><a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a></td>
+  <td title="'Id'" sortable="'id'"><small>{{ item.id }}</small></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttAirPhysics"><table id="ctAirPhysics" ng-table="tableParams" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.Air" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Air" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td title="''" sortable="'tmpSelectionOrder'"><div class="sideScrollMeAlways"><div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div></div></td>
   <td title="'Faction'" sortable="'faction'" class="sideScrollMe noWrap">{{ item.faction }}</td>
   <td title="'Unit'" sortable="'fullName'" class="sideScrollMe noWrap">{{ item.fullName }}</td>
@@ -104,20 +100,20 @@
   <td title="'Engage distance'" sortable="'Air.EngageDistance || -2000000000'">{{ item.Air.EngageDistance }}</td>
   <td title="'Turn speed'" sortable="'Air.TurnSpeed || -2000000000'">{{ item.Air.TurnSpeed }}</td>
   <td title="'Combat turn speed'" sortable="'Air.CombatTurnSpeed || -2000000000'">{{ item.Air.CombatTurnSpeed }}</td>
-  <td title="'Id'" sortable="'id'"><a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a></td>
+  <td title="'Id'" sortable="'id'"><small>{{ item.id }}</small></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttWreckage"><table id="ctWreckage" ng-table="tableParams" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" ng-if="item.Wreckage" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Wreckage" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td title="''" sortable="'tmpSelectionOrder'"><div class="sideScrollMeAlways"><div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div></div></td>
   <td title="'Faction'" sortable="'faction'" class="sideScrollMe noWrap">{{ item.faction }}</td>
   <td title="'Unit'" sortable="'fullName'" class="sideScrollMe noWrap">{{ item.fullName }}</td>
   <!-- after header column -->
   <td title="'Health'" sortable="'Wreckage.HealthMult*Defense.Health || -2000000000'">{{ item.Wreckage.HealthMult*item.Defense.Health | round }}</td>
   <td title="'Mass'" sortable="'Wreckage.MassMult*Economy.BuildCostMass || -2000000000'">{{ item.Wreckage.MassMult*item.Economy.BuildCostMass | round }}</td>
-  <td title="'Id'" sortable="'id'"><a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a></td>
+  <td title="'Id'" sortable="'id'"><small>{{ item.id }}</small></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttVeterancy"><table id="ctVeterancy" ng-table="tableParams" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(item)" class="{{ item.faction|lowercase }}" ng-repeat="item in $data">
+ <tr ng-click="showUnitDetails(item)" ng-if="item.Weapon&&(item.Weapon[0].WeaponCategory!=='Death'||item.Weapon.length>1)" class="{{ item.faction|lowercase }} {{ activeUnitDetailUnit.id===item.id&&'active' }}" ng-repeat="item in $data">
   <td title="''" sortable="'tmpSelectionOrder'"><div class="sideScrollMeAlways"><div class="strategic icon-{{ item.faction  }}_{{ item.strategicIcon}}" ></div></div></td>
   <td title="'Faction'" sortable="'faction'" class="sideScrollMe noWrap">{{ item.faction }}</td>
   <td title="'Unit'" sortable="'fullName'" class="sideScrollMe noWrap">{{ item.fullName }}</td>
@@ -147,7 +143,7 @@
   <td title="'Kills'" sortable="'Veteran[\'Level5\'] || -2000000000'">{{ item.Veteran['Level5'] }}</td>
   <td title="'Health'" sortable="'(Veteran[\'Level5\'] && Defense.Health * (1 + 5 * 0.1)) || -2000000000'"><div ng-if="item.Veteran['Level5']">{{ item.Defense.Health * (1 + 5 * 0.1) | round }}</div></td>
   <td title="'Regeneration'" sortable="'(Defense.RegenRate+Buffs.Regen[\'Level5\']) || -2000000000'"><div ng-if="item.Buffs.Regen['Level5']" class="noWrap">{{ item.Defense.RegenRate + item.Buffs.Regen['Level5'] }} hp/s</div></td>
-  <td title="'Id'" sortable="'id'"><a href="https://github.com/FAForever/fa/blob/develop/units/{{ item.id }}/{{ item.id }}_unit.bp" target="_blank"><small>{{ item.id }}</small></a></td>
+  <td title="'Id'" sortable="'id'"><small>{{ item.id }}</small></td>
  </tr>
 </table></script><script type="text/ng-template" id="cttWeapons"><table id="ctWeapons" ng-table-dynamic="weaponTableParams with weaponFeatureColumns" show-group="false" class="compareTable stickyheaders">
  <tr ng-repeat-start="group in $groups">
@@ -155,7 +151,7 @@
     <h3 ng-click="weaponGroupsShow[group.value] = !weaponGroupsShow[group.value]"><span class="sideScrollMeAlways" style="cursor: pointer;">{{ group.value }}</span></h3>
   </td>
  </tr>
- <tr class="{{ o.unit.faction|lowercase }}" ng-click="showUnitDetails(o.unit)" ng-show="!weaponGroupsShow[group.value]" ng-repeat="o in group.data" ng-repeat-end>
+ <tr class="{{ o.unit.faction|lowercase }} {{ activeUnitDetailUnit.id===o.unit.id&&'active' }}" ng-click="showUnitDetails(o.unit)" ng-show="!weaponGroupsShow[group.value]" ng-repeat="o in group.data" ng-repeat-end>
   <td ng-repeat="col in $columns" class="wfc{{ col.field }}" title="{{col.title()+'\n'+o.weapon.DisplayName+'\n'+o.unit.fullName}}">
     <div ng-if="col.field === 'tmpSelectionOrder'" class="sideScrollMeAlways">
       <div class="strategic icon-{{ o.unit.faction  }}_{{ o.unit.strategicIcon}}" ></div>
@@ -183,14 +179,12 @@
         {{ o.weapon[col.field] }}
       </div>
     </div>
-    <div ng-if="col.field === 'id'">
-      <a href="https://github.com/FAForever/fa/blob/develop/units/{{ o.unit.id }}/{{ o.unit.id }}_unit.bp" target="_blank"><small>{{ o.unit.id }}</small></a>
-    </div>
+    <div ng-if="col.field === 'id'"><small>{{ o.unit.id }}</small></div>
   </td>
  </tr>
 </table>
 </div></script><script type="text/ng-template" id="cttEnhancements"><table id="ctEnhancements" ng-table-dynamic="enhancementTableParams with enhancementFeatureColumns" class="compareTable stickyheaders">
- <tr ng-click="showUnitDetails(o.unit)" class="{{ o.unit.faction|lowercase }}" ng-repeat="o in $data">
+ <tr ng-click="showUnitDetails(o.unit)" class="{{ o.unit.faction|lowercase }} {{ activeUnitDetailUnit.id===o.unit.id&&'active' }}" ng-repeat="o in $data">
   <td ng-repeat="col in $columns" title="{{col.title()+'\n'+o.unit.Enhancements[o.enhancement]['Name']+'\n'+o.unit.fullName}}">
     <div ng-if="col.field === 'tmpSelectionOrder'" class="sideScrollMeAlways">
       <div class="strategic icon-{{ o.unit.faction  }}_{{ o.unit.strategicIcon}}" ></div>
@@ -210,9 +204,7 @@
     <div ng-if="o.unit.Enhancements[o.enhancement].indexOf(col.field) !== -1 && ['Name'].indexOf(col.field) === -1">
       {{o.unit.Enhancements[o.enhancement][col.field]}}
     </div>
-    <div ng-if="col.field === 'id'">
-      <a href="https://github.com/FAForever/fa/blob/develop/units/{{ o.unit.id }}/{{ o.unit.id }}_unit.bp" target="_blank"><small>{{ o.unit.id }}</small></a>
-    </div>
+    <div ng-if="col.field === 'id'"><small>{{ o.unit.id }}</small></div>
   </td>
  </tr>
 </table></script></div><!--unitNameDisplayHoverAreaNeighbor-->
